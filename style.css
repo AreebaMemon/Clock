@@ -1,17 +1,24 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box; 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     height: 100vh;
 }
 
-#clockContainer{
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+#clockContainer {
     position: relative;
     width: 40vw;
     height: 40vw;
@@ -21,14 +28,14 @@ body {
     background-size: 100%;
 }
 
-#hour,#minute,#second{
+#hour, #minute, #second {
     position: absolute;
     background-color: black;
     border-radius: 10px;
     transform-origin: bottom;
 }
 
-#hour{
+#hour {
     width: 1.5%;
     height: 25%;
     top: 25%;
@@ -36,15 +43,15 @@ body {
     opacity: 0.8;
 }
 
-#minute{
+#minute {
     width: 1%;
     height: 35%;
     top: 15%;
     left: 49.5%;
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
-#second{
+#second {
     width: 0.5%;
     height: 40%;
     top: 10%;
